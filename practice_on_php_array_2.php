@@ -96,5 +96,11 @@ print_r(array_count_values($a));
 
 <!-- 
     Q.19.
-
+        Write a PHP function to create a multidimensional unique array for any single key index.
  -->
+
+<?php
+$a=array("A","Cat","Dog","A","Dog");
+print_r(array_unique($a));
+
+?>
