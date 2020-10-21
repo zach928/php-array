@@ -37,3 +37,15 @@ $colors = array("Red", "Orange", "Black", "White");
 rsort($colors);
 print_r($colors);
 ?>
+
+<!-- 
+    Q.14.
+        Write a PHP program to generate an array with a range taken from a string.
+ -->
+
+<?php
+$colors = array("Red", "Orange", "Black", "White");
+$random_keys=array_rand($colors,2);
+echo $colors[$random_keys[0]]."<br>";
+echo $colors[$random_keys[1]]."<br>";
+?>
