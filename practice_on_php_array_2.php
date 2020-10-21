@@ -83,3 +83,18 @@ print_r($age);
  print_r(array_change_key_case($age,CASE_UPPER));
  print_r(array_change_key_case($age,CASE_LOWER));
  ?>
+
+<!-- 
+    Q.18.
+        Write a PHP script to count the total number of times a specific value appears in an array.
+ -->
+
+<?php
+ $a=array("A","Cat","Dog","A","Dog");
+print_r(array_count_values($a));
+?>
+
+<!-- 
+    Q.19.
+
+ -->
