@@ -144,3 +144,16 @@ foreach($a as $x => $x_value)
         }
     
 ?>
+
+<!-- 
+    Q.8.    
+    Write a PHP program to merge (by index) the following two arrays. Go to the editor
+    Sample arrays :
+    $array1 = array(array(77, 87), array(23, 45));
+    $array2 = array("w3resource", "com");
+ -->
+<?php
+$array1 = array(array(77, 87), array(23, 45));
+$array2 = array("w3resource", "com");
+print_r(array_merge_recursive($array1,$array2));
+?>
