@@ -104,3 +104,31 @@ $a=array("A","Cat","Dog","A","Dog");
 print_r(array_unique($a));
 
 ?>
+
+<!-- 
+    Q.20.
+        Write a PHP program to remove duplicate values from an 
+        array which contains only strings or only integers
+ -->
+
+<?php
+    $colors = array( 
+      0 => 'Red', 
+      1 => 'Green', 
+      2 => 'White', 
+      3 => 'Black', 
+      4 => 'Red', 
+    ); 
+    
+    $numbers = array( 
+      0 => 100, 
+      1 => 200, 
+      2 => 100, 
+      3 => -10, 
+      4 => -10, 
+      5 => 0, 
+    ); 
+    print_r(array_unique($colors));
+    print_r(array_unique($numbers));
+?>
+
