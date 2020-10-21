@@ -58,3 +58,27 @@ foreach ($ceu as $country => $capital )
         }
 
 ?>
+
+<!--
+    Q.4.
+       4.   $x = array(1, 2, 3, 4, 5);
+            Delete an element from the above PHP array. After deleting the element, integer keys must be normalized.
+            -->
+<?php
+        $x = array(1, 2, 3, 4, 5);
+        unset($x[3]);
+        print_r($x);
+?>
+
+<!--
+    Q.5.    
+        $color = array(4 => 'white', 6 => 'green', 11=> 'red');
+        Write a PHP script to get the first element of the above array.
+
+        -->
+
+<?php
+$color = array(4 => 'white', 6 => 'green', 11=> 'red');
+echo reset($color);
+
+?>
