@@ -82,3 +82,20 @@ $color = array(4 => 'white', 6 => 'green', 11=> 'red');
 echo reset($color);
 
 ?>
+
+<!--
+    Q.6.
+       Write a PHP script that inserts a new item in an array in any position. Go to the editor
+        Expected Output :
+        Original array : 
+        1 2 3 4 5 
+        After inserting '$' the array is :
+        1 2 3 $ 4 5
+
+        -->
+
+<?php
+ $a = array(1 2 3 4 5);
+ array_pust($a,4);
+ print_r($a);
+?>
