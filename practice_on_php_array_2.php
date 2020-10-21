@@ -60,3 +60,26 @@ echo $colors[$random_keys[1]]."<br>";
 $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 echo array_search(max($age),$age);
 ?>
+
+<!-- 
+    Q.16.
+        Write a PHP program to sort an associative array 
+        (alphanumeric with case-sensitive data) by values.
+ -->
+
+ <?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort ($age);
+print_r($age);
+?>
+
+<!-- 
+    Q.17.
+        Write a PHP script to lower-case and upper-case, all elements in an array.
+ -->
+
+ <?php
+ $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ print_r(array_change_key_case($age,CASE_UPPER));
+ print_r(array_change_key_case($age,CASE_LOWER));
+ ?>
