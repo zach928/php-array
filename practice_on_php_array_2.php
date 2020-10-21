@@ -49,3 +49,14 @@ $random_keys=array_rand($colors,2);
 echo $colors[$random_keys[0]]."<br>";
 echo $colors[$random_keys[1]]."<br>";
 ?>
+
+<!-- 
+    Q.15.
+        Write a PHP program to get the index of the highest 
+        value in an associative array.
+ -->
+
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo array_search(max($age),$age);
+?>
