@@ -26,3 +26,14 @@ print_r($cars);
 natcasesort($colors);
 print_r($colors);
 ?>
+
+<!-- 
+    Q.13.
+        Write a PHP script to sort an array in reverse order (highest to lowest).
+ -->
+
+<?php
+$colors = array("Red", "Orange", "Black", "White");
+rsort($colors);
+print_r($colors);
+?>
