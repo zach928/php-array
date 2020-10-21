@@ -96,6 +96,51 @@ echo reset($color);
 
 <?php
  $a = array(1 2 3 4 5);
- array_pust($a,4);
+ array_push($a,4);
  print_r($a);
+?>
+
+<!-- 
+    Q.7.
+       Write a PHP script to sort the following associative array : Go to the editor
+        array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40") in
+                a) ascending order sort by value
+                b) ascending order sort by Key
+                c) descending order sorting by Value
+                d) descending order sorting by Key                                  
+ -->
+
+ <?php
+$a = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+asort($a);
+ksort($a);
+arsort($a);
+krsort($a);
+foreach($a as $x => $x_value)
+        {
+            echo "Age of" . $x . ", is" . $x_value;
+            echo "<br>";
+        }
+    
+    ksort($a);
+    foreach($a as $x => $x_value)
+        {
+            echo "Age of" . $x . ", is" . $x_value;
+            echo "<br>";
+        }
+    
+    arsort($a);
+    foreach($a as $x => $x_value)
+        {
+            echo "Age of" . $x . ", is" . $x_value;
+            echo "<br>";
+        }
+    
+    krsort($a);
+    foreach($a as $x => $x_value)
+        {
+            echo "Age of" . $x . ", is" . $x_value;
+            echo "<br>";
+        }
+    
 ?>
