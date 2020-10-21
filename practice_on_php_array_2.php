@@ -14,3 +14,15 @@ $cars = array (
 array_multisort($cars);
 print_r($cars);
 ?>
+
+<!-- 
+    Q.12.
+        Write a PHP script to sort an array using case-insensitive natural ordering.
+ -->
+<?php
+ $colors = array(
+    "color1", "color20", "color3", "color2"
+);
+natcasesort($colors);
+print_r($colors);
+?>
