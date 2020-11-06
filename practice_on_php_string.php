@@ -36,5 +36,11 @@ echo chr(0x0501) . "<br>";
 <!-- chunk_split -->
 <?php
 $str = "Central University of Haryana";
-echo chunk_split($str,2,"=");
+echo chunk_split($str,2,"="),'<br>';
+?>
+
+<!-- Convert uuencode -->
+<?php
+$str = "Aman Kuman";
+echo convert_uuencode($str);
 ?>
